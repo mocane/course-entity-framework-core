@@ -1,0 +1,10 @@
+/EntityFrameworkCore/EntityFrameworkCore.Data/obj/
+/EntityFrameworkCore/EntityFrameworkCore.Data/obj/EntityFrameworkCore.Data.csproj.nuget.dgspec.json
+/EntityFrameworkCore/EntityFrameworkCore.Data/obj/EntityFrameworkCore.Data.csproj.nuget.g.props
+/EntityFrameworkCore/EntityFrameworkCore.Data/obj/EntityFrameworkCore.Data.csproj.nuget.g.targets
+/EntityFrameworkCore/EntityFrameworkCore.Data/obj/project.assets.json
+/EntityFrameworkCore/EntityFrameworkCore.Domain/obj/
+/EntityFrameworkCore/EntityFrameworkCore.Domain/obj/EntityFrameworkCore.Domain.csproj.nuget.dgspec.json
+/EntityFrameworkCore/EntityFrameworkCore.Domain/obj/EntityFrameworkCore.Domain.csproj.nuget.g.props
+/EntityFrameworkCore/EntityFrameworkCore.Domain/obj/EntityFrameworkCore.Domain.csproj.nuget.g.targets
+/EntityFrameworkCore/EntityFrameworkCore.Domain/obj/project.assets.json
