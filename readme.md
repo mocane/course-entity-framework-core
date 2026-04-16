@@ -24,4 +24,10 @@ Commands used for this project in terminal:
   dotnet tool install dotnet-ef --version 10.*                        
   dotnet tool run dotnet-ef migrations add InitialMigration --startup-project .\EntityFrameworkCore.Console\  --project .\EntityFrameworkCore.Data\
   dotnet tool run dotnet-ef database update --startup-project .\EntityFrameworkCore.Console\ --project .\EntityFrameworkCore.Data\
+
+  dotnet tool run dotnet-ef migrations add SeededTeams --startup-project .\EntityFrameworkCore.Console\  --project .\EntityFrameworkCore.Data\
+  #correction needed
+  dotnet tool run dotnet-ef migrations remove --startup-project .\EntityFrameworkCore.Console\  --project .\EntityFrameworkCore.Data\
+  dotnet tool run dotnet-ef migrations add SeededTeams --startup-project .\EntityFrameworkCore.Console\  --project .\EntityFrameworkCore.Data\
+  dotnet tool run dotnet-ef database update --startup-project .\EntityFrameworkCore.Console\ --project .\EntityFrameworkCore.Data\
   ```
