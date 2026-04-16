@@ -20,7 +20,7 @@ namespace EntityFrameworkCore.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite($"Data Source={Dbpath}");
+            optionsBuilder.UseSqlite($"Data Source=FotballLeague.db");
         }
     }
 }
