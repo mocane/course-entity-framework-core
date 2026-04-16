@@ -1,4 +1,4 @@
-Commands use for this project in terminal:
+Commands used for this project in terminal:
    ```bash
   dotnet new sln  
 
