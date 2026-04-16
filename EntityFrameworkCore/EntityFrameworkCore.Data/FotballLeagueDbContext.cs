@@ -1,17 +1,16 @@
 using EntityFrameworkCore.Domain;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace EntityFrameworkCore.Data
 {
     public class FotballLeagueDbContext : DbContext
     {
-        private string Dbpath;
+        private readonly string Dbpath;
 
         public FotballLeagueDbContext()
         {
-            var folder = Environment.SpecialFolder.LocalApplicationData;
-            var path = Environment.GetFolderPath(folder);
-            Dbpath = System.IO.Path.Join(path, "FotballLeague.db");
+            Dbpath = System.IO.Path.Join(AppContext.BaseDirectory, "FootballLeague.db");
         }
         
         public DbSet<Team> Teams { get; set; }
@@ -20,7 +19,10 @@ namespace EntityFrameworkCore.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite($"Data Source=FotballLeague.db");
+            optionsBuilder.UseSqlite($"Data Source={Dbpath}")
+                .LogTo(Console.WriteLine, LogLevel.Information)
+                .EnableSensitiveDataLogging()
+                .EnableDetailedErrors();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

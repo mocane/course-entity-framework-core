@@ -18,4 +18,8 @@
     <ProjectReference Include="..\EntityFrameworkCore.Data\EntityFrameworkCore.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="FootballLeague.db" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
