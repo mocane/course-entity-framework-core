@@ -1,10 +1,7 @@
 ﻿namespace EntityFrameworkCore.Domain;
 
-public class Coach
+public class Coach : BaseDomainModel
 {
-    public int Id { get; set; } // sometimes called CoachId, but Id is more common for primary keys
-
     public string Name { get; set; }
-
-    public DateTime CreatedDate { get; set; }
+    public int? TeamId { get; set; }
 }

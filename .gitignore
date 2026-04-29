@@ -8,3 +8,7 @@
 /EntityFrameworkCore/EntityFrameworkCore.Domain/obj/EntityFrameworkCore.Domain.csproj.nuget.g.props
 /EntityFrameworkCore/EntityFrameworkCore.Domain/obj/EntityFrameworkCore.Domain.csproj.nuget.g.targets
 /EntityFrameworkCore/EntityFrameworkCore.Domain/obj/project.assets.json
+/EntityFrameworkCore/EntityFrameworkCore.Console/obj/
+/EntityFrameworkCore/EntityFrameworkCore.Console/bin/Debug/
+/EntityFrameworkCore/EntityFrameworkCore.Data/bin/
+/EntityFrameworkCore/EntityFrameworkCore.Domain/bin/
