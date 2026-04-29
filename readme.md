@@ -1,4 +1,5 @@
-Commands used for this project in terminal:
+<h5>Commands used for this project in terminal:</h5>  
+  
    ```bash
   dotnet new sln  
 
@@ -32,8 +33,9 @@ Commands used for this project in terminal:
   dotnet tool run dotnet-ef database update --startup-project .\EntityFrameworkCore.Console\ --project .\EntityFrameworkCore.Data\
   ```  
     
-Remember: I had to hardcode the data source on `OnConfiguring`
-Interesting log for a second migration database update:  
+  
+<h5>Interesting log for a second migration database update (Remember: I had to hardcode the data source on 'OnConfiguring'):</h5>
+
 ```
  dotnet tool run dotnet-ef database update --startup-project .\EntityFrameworkCore.Console\ --project .\EntityFrameworkCore.Data\
 Build started...
